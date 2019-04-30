@@ -15,12 +15,13 @@ object FizzBuzz {
       case (true,true,false) => "fizz buzz"
       case (true,false,true) => "fizz deluxe"
       case (false,true,true) => "buzz deluxe"
-      case (false,false,true) => "deluxe"
+      case (false,false,true) => if (isFakeDeluxe)"fake deluxe" else "deluxe"
       case (true,false,false) => "fizz"
       case (false,true,false) => "buzz"
       case _ => ""+number
     }
   }
 }
+
 
 
