@@ -19,4 +19,3 @@ class SumTest extends FlatSpec with Matchers {
       }}
 
 }
-

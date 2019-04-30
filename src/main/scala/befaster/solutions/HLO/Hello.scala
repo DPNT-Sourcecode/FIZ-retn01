@@ -7,5 +7,3 @@ object Hello {
     "Hello, World!"
   }
 }
-
-
