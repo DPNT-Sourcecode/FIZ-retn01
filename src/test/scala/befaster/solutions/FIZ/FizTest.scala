@@ -1,21 +1,20 @@
-package befaster.solutions.SUM
+package befaster.solutions.FIZ
 
 import org.scalatest.{FlatSpec, Matchers}
 
-class SumTest extends FlatSpec with Matchers {
+class FizTest extends FlatSpec with Matchers {
 
-  it should "compute sum" in {
-    Sum.sum(1,2) shouldBe 3
+  it should "if number 9 got fizz" in {
+    FizzBuzz.fizzBuzz(9) shouldBe "fizz"
   }
 
-  it should "throw exception if par negative" in {
-    intercept[IllegalArgumentException]{
-      Sum.sum(-2,10)
-    }}
+  it should "if number 25 got buzz" in {
+    FizzBuzz.fizzBuzz(25) shouldBe "buzz"}
 
-    it should "throw exception if par bigger than 100" in {
-      intercept[IllegalArgumentException]{
-        Sum.sum(1,105)
-      }}
+    it should "if number 225 got fizz buzz" in {
+      FizzBuzz.fizzBuzz(225) shouldBe "fizz buzz"}
 
+  it should "if number 23 got 23" in {
+    FizzBuzz.fizzBuzz(23) shouldBe "23"}
 }
+
