@@ -10,13 +10,18 @@ object FizzBuzz {
     val isBuzz=number%5==0 || numberStr.contains('5')
     val isDeluxe=number>10 && numberStr.count(x=> x==numberStr.charAt(0))==numberStr.length()
     (isFizz,isBuzz,isDeluxe) match {
-      case (true,true) => "fizz buzz"
-      case (true,_) => "fizz"
-      case (_,true) => "buzz"
+      case (true,true,true) => "fizz buzz deluxe"
+      case (true,true,false) => "fizz buzz"
+      case (true,false,true) => "fizz deluxe"
+      case (false,true,true) => "buzz deluxe"
+      case (false,false,true) => "deluxe"
+      case (true,false,false) => "fizz"
+      case (false,true,false) => "buzz"
       case _ => ""+number
     }
   }
 }
+
 
 
 
