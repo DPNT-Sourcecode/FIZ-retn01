@@ -13,8 +13,8 @@ object FizzBuzz {
     (isFizz,isBuzz,isDeluxe) match {
       case (true,true,true) => if (isFakeDeluxe)"fizz buzz fake deluxe" else "fizz buzz deluxe"
       case (true,true,false) => "fizz buzz"
-      case (true,false,true) => "fizz deluxe"
-      case (false,true,true) => "buzz deluxe"
+      case (true,false,true) => if (isFakeDeluxe) "fizz fake deluxe" else "fizz deluxe"
+      case (false,true,true) => if (isFakeDeluxe) "buzz fake deluxe" else "buzz deluxe"
       case (false,false,true) => if (isFakeDeluxe)"fake deluxe" else "deluxe"
       case (true,false,false) => "fizz"
       case (false,true,false) => "buzz"
@@ -22,6 +22,7 @@ object FizzBuzz {
     }
   }
 }
+
 
 
 
