@@ -14,7 +14,8 @@ class FizTest extends FlatSpec with Matchers {
     it should "if number 225 got fizz buzz" in {
       FizzBuzz.fizzBuzz(225) shouldBe "fizz buzz"}
 
-  it should "if number 23 got 23" in {
-    FizzBuzz.fizzBuzz(23) shouldBe "23"}
-}
+  it should "if number 29 got 29" in {
+    FizzBuzz.fizzBuzz(23) shouldBe "29"}
 
+
+}

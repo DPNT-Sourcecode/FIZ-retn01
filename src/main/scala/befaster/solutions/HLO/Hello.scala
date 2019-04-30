@@ -7,4 +7,3 @@ object Hello {
     "Hello, "+friendName+"!"
   }
 }
-
